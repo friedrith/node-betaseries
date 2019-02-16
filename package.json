@@ -1,0 +1,34 @@
+{
+  "name": "node-betaseries",
+  "version": "0.1.0",
+  "description": "A node.js SDK to wrap Betaseries Http API",
+  "main": "dist/index.js",
+  "repository": "git@github.com:friedrith/node-betaseries.git",
+  "author": "Thibault Friedrich <thibault.friedrich@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "mocha test/test.js",
+    "test:manual": "babel-node test/test.js",
+    "start": "babel-node src/assistant.js",
+    "cli": "babel-node src/nodes/adapters/command-line",
+    "build": "babel src --out-dir dist",
+    "lint": "eslint src/**/*.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-module-resolver": "^3.1.3",
+    "dotenv": "^6.2.0",
+    "eslint": "^5.12.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
