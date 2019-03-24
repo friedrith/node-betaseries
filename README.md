@@ -1,3 +1,5 @@
+:warning: This project is not released :warning:
+
 # node-betaseries
 
 A modern node.js SDK to wrap [betaseries HTTP API](https://www.betaseries.com/api/).
